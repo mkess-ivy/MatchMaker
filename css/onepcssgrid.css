@@ -36,7 +36,7 @@
 .onepcssgrid-1000, .onepcssgrid-1200 {
 	margin: 0 auto;
 	padding: 0 0 0 1%; /* THAT'S THE NAME ;) */
-}
+} 
 
 .onepcssgrid-1200 {
 	max-width: 1220px;
@@ -69,7 +69,7 @@
 
 .col1 { width: 5.5%; }
 .col2 { width: 14%; }
-.col3 { width: 22.5%; }
+.col3 { width: 20%; }
 .col4 { width: 31%; }
 .col5 { width: 39.5%; }
 .col6 { width: 48%; }
@@ -121,5 +121,5 @@
 }
 
 /*.col4 {
-	float: right;
+	padding: 0 1px;
 }*/

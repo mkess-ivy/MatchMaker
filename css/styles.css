@@ -1,96 +1,294 @@
-/* StartUp Matchmaker Styles */
+/* ====== ADMIN CSS ======= */
 
-.body {
-	margin: 0 0;
-	/*padding: 0 0;*/
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+    background-color: #aaa;
+	}
+
+a {
+    color: yellow;
+    text-decoration: none;
 }
 
+/* ====== ELEMENT STYLES ======= */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*section, header, .block {
+    min-height: 100px;
+}*/
+
+/* ======= HEADER, LOGO & TAGLINE ======= */
+.site-header {
+    background-color: black;
+    border-bottom: 2px solid yellow;
+    padding: 20px;
+} 
+
 .logo {
-	font-size: 36px;
-	color: Yellow;
+    /*margin: 0;*/
+    font-size: 26px;
+    font-family: 'Merriweather', serif;
+    /*position: relative;*/
+    display: inline-block;
 }
 
 .tagline {
-	font-size: 32px;
-	text-align: center;
-	text-decoration: italic;
+    font-family: 'Merriweather', serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 22px;
+    background-color: #d3d3d3;
+    padding: 20px;
+    text-align: center;
 }
 
-.hero-img {
-	background-image: url('../images/coworking.jpg');
-	background-size: cover;
-	height: 400px;
+.tagline del {
+    color: gray;
 }
 
-.float-right {
-	float: right;
-	position: relative;
-	margin: 40px 30px 0 0;
+.tagline ins {
+    display: inline-block;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 2px solid yellow;
 }
 
-.black {
-	background: Black;
+/* ======= HERO SECTIONS ====== */
+.hero {
+    background-color: gray;
+    background-image: url('../images/coworking.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    min-height: 300px;
 }
 
-.grey {
-	background: #e3e3e3;
+.hero-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 300px;
+    min-width: 150px;
+    float: right;
+    padding: 30px;
+    box-shadow: 0 0 3px #333;
 }
 
-.menu {
-	list-style: none;
-	margin-right: 20px;
+/* ===== BLOCKS ===== */
+
+.block-heading {
+    margin: 0;
+    font-size: 1.5em;
 }
 
-.menu a {
-	text-decoration: none;
-	color: white;
+.block-copy {
+    margin-top: 5px;
 }
 
-.menu li {
-	display: inline-block;
+.block-group {
+    background-color: white;
+    padding: 10px 0;
 }
 
-.scratch-out {
-	color: Grey;
+.block {
+    padding: 15px 20px;
+    text-align: justify;
+    min-height: 230px;
 }
 
-.underline {
-	border-bottom: 3px solid Yellow;
+.block:last-child {
+    border-right: none;
+    float: right;
 }
 
-.hero-textbox {
-	background: rgba(255,255,255, .6);
-	height: 270px;
-	padding: 0 10px;
-	border: 1px solid Grey;
-	/*margin: 20px 20px 0 0;*/
-	position: relative;
-	text-align: center;
+/* ===== BUTTONS ===== */
+
+.btn {
+    text-transform: uppercase;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+    text-align: center;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,0.2);
+    transition-property: box-shadow;
+    transition-duration: 200ms;
+}
+
+.btn:hover {
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,0.1);
+}
+
+.btn-block {
+    background-color: #d3d3d3;
 }
 
 .hero-btn {
-	background: Yellow;
-	border-radius: 10%;
-	/*text-align: right;*/
+    background-color: yellow;
 }
 
-.small-feature	 {
-	border-right: 2px solid #e3e3e3;
-	margin: 3px 35px;
-	/*padding: 0 1px;*/
+/* ===== FOOTER ===== */
+
+.copyright {
+    font-family: 'Merriweather', serif;
+    color: white;
+    background-color: black;
+    padding: 20px;
 }
 
-.small-feature:after {
-	content: ''
-	;
+/* ===== MISCELLANEOUS ===== */
+
+.line-up {
+    position: relative;
+    top: 5px;
 }
 
-.footer {
-	color: white;
-	font-weight: bold;
-	padding-left: 10px;
+.hamburger {
+    font-size: 3em;
+    text-decoration: none;
+    text-align: right;
+    display: inline-block;
+    color: yellow;
+    /*margin: 0.3em;*/
+    /*position: relative;*/
+    float: right;
 }
 
+.navigation {
+    display: none;
+}
+
+/* ===== FOR SCREENS SMALLER THAN 799PX ===== */
+@media screen and (max-width: 799px) {
 
 
+    .navigation {
+        background: Gray;
+    }
 
+    .main-nav li {
+        width: 90%;
+        margin: 0 auto;
+        border-bottom: 1px solid #d3d3d3;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .main-nav a {
+        text-decoration: none;
+        color: #f5f5f5;
+    }
+
+    .copyright {
+        font-family: 'Merriweather', serif;
+        font-size: 0.7em;
+        color: white;
+        background-color: black;
+        padding: 20px;
+    }
+
+    .hero-container {
+        background-color: rgba(255, 255, 255, 0.8);
+        min-width: 150px;
+        float: right;
+        padding: 30px;
+        box-shadow: 0 0 3px #333;
+    }
+
+    .block {
+        padding: 15px 20px;
+        text-align: justify;
+        min-height: 230px;
+        border-bottom: 2px solid #e3e3e3;
+    }
+
+    .logo {
+    /*margin: 0;*/
+    /*font-size: 32px;*/
+    width: 30%;
+    font-family: 'Merriweather', serif;
+    /*position: relative;*/
+    display: inline-block;
+}
+}
+
+/* ===== FOR SCREENS BIGGER THAN 800PX */
+@media screen and (min-width: 800px) {
+
+    .hamburger { 
+        display: none;
+    }
+
+    .navigation {
+        display: block; !important
+        width: 80%;
+        float: right;
+    }
+
+    .main-nav {
+        font-size: 22px;
+        color: white;
+    }
+
+    .main-nav li {
+        margin-right: 20px;
+    }
+
+    .main-nav li:last-child {
+        margin-right: 0;
+    }
+
+    .main-nav a {
+        color: white;
+    }
+
+    .horizontal-nav {
+        padding: 0;
+        list-style: none;
+    }
+
+    .horizontal-nav li {
+        display: inline-block;
+    }
+
+    .main-nav strong {
+        text-transform: uppercase;
+        font-size: 25px;
+        font-family:'Oswald';
+    }
+
+    .block {
+        padding: 0 20px;
+        width: 29%;
+        float: left;
+        border-right: solid #d3d3d3 1px;
+        text-align: justify;
+    }
+
+
+    /*
+    .menu {
+        list-style: none;
+        margin: -20px 20px 20px 0;
+        font-family: 'Oswald', sans-serif;
+        font-size: 20px;
+    } 
+    .menu a {
+        text-decoration: none;
+        color: white;
+    }
+    .menu li {
+        display: inline-block;
+        padding: 0 25px;
+    }
+
+    .big-menu-item {
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    */
+}
